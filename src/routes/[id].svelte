@@ -9,6 +9,13 @@
     let options_raw = await fetch(`${assets}/data/lad_list_2021.json`);
     let options = await options_raw.json();
 
+	let template_raw = await fetch(`${assets}/data/template.txt`)
+	console.log('template_raw', template_raw)
+	let template = await template_raw.text();
+	
+	let topics_raw = await fetch(`${assets}/data/topics.json`);;
+    let topics = await topics_raw.json();
+
     let place_raw = await fetch(`${assets}/data/json/place/${id}.json`);
     let place = await place_raw.json();
     let s = place.stories.map(d => d.label.split("_"))
@@ -27,7 +34,7 @@
     let wal = await wal_raw.json();
 
     return {
-			props: { options, place, rgn, eng, wal, s }
+			props: { options, topics, place, rgn, eng, wal, s, template }
 		}
 	}
 </script>
@@ -56,6 +63,8 @@
 	import Fuse from 'fuse.js';
 
   export let options;
+  export let topics;
+  export let template;
   export let place;
   export let s;
   export let rgn;
@@ -124,15 +133,18 @@
   console.log('place', place)
   console.log('rgn', rgn)
 
-  var topics;
-    fetch("./archie.aml")
-        .then((res) => res.text())
-        .then((txt) => (topics = loadarch(txt)));
+//   var topics;
+//     fetch("./archie.aml")
+//         .then((res) => res.text())
+//         .then((txt) => (topics = loadarch(txt)));
 
-  var template;
-    fetch("./template.pug")
-        .then((res) => res.text())
-        .then((txt) => (template = txt));
+  $: console.log('topics', topics)
+  $: console.log('template', template)
+
+//   var template;
+//     fetch("./template.pug")
+//         .then((res) => res.text())
+//         .then((txt) => (template = txt));
 
   let grewSyn = {
 		1: "expanded",
@@ -173,10 +185,8 @@
 	}
 
   function results(place, rgn, topicsIn) {
-    console.log('results')
     var o = JSON.parse(JSON.stringify(topicsIn));
     iterate(o, place.name)
-    console.log("topics", o)
 
     function topic(i, top) {
       let ttop
@@ -190,7 +200,6 @@
 
     let sf = []
 		let changeMag = 0
-    console.log('sf', place)
 		place.stories.forEach(e => {
 			if ((sf.length<4)&(Math.abs(e['value'])>3)) {
 				sf.push(e['label'].split("_"))
@@ -262,6 +271,12 @@
 		return Number.parseFloat(Number.parseFloat(0.714*x).toPrecision(2))
 	}
 
+  function swap(array, indexA, indexB) {
+    var tmp = array[indexA];
+    array[indexA] = array[indexB];
+    array[indexB] = tmp;
+  }
+
 	function makeProps(i) {
 		let s = place.stories[i].label.split("_")
 			if (s.length>4) {
@@ -281,6 +296,13 @@
 				Object.keys(d.data[t].perc[g]).forEach(e => {
 					a.push({'x': e, 'y': d.data[t].perc[g][e], 'g': g})
 				});
+        if (s[0]=='religion') {
+          // filter out religion not stated
+					a = a.filter(d => d['x'] != "Religionnotstated")
+          // move 'Other' to the end of the list
+          const findOther = (e) => e['x'] == 'Otherreligion';
+          swap(a, a.findIndex(findOther), a.length-1);
+				}
 				return a
 			}
 			let chartData
@@ -298,9 +320,9 @@
 					[dtrans(place, 2001), dtrans(place, 2011)],
 				]
 			}
+
 			let xTickCal = Math.round((Math.max(...chartData.flat().flat().map(d => d.y))-5)/10)*10
 			let xMax = Math.round((Math.max(...chartData.flat().flat().map(d => d.y))-5)/10)*10
-			console.log('AGE chartData', xTickCal)
 			let props = {
 						legend: true,
 						height: 120,
@@ -507,8 +529,10 @@
 	<Section backlink hr>
     {#if loaded}
     {#if wal}
+    {#if ladData}
     {#if place}
     {#if template}
+    <div style="height: 50px"></div>
     {#each results(place, rgn, topics) as res, i (i)}
       {@html res}
       <div style="width: 100%">
@@ -517,40 +541,26 @@
         {/if}
       </div>
     {/each}
-    <!-- {@html results(place, rgn, topics)} -->
+    {#if place.stories.length>6}
+    <button on:click={readMore}>
+      <div class="triangle-container">
+        <svg height="25" width="50">
+            {#if more}
+              <polygon points="25,10 15,20 25,10 35,20" class="triangle" />
+            {:else}
+              <polygon points="25,20 15,10 25,20 35,10" class="triangle" />
+            {/if}
+        </svg>
+      </div>
+      {more?'Read less':'Read more'}
+    </button>
+    {/if}
+    <div style="height: 50px"></div>
     {/if}
     {/if}
     {/if}
     {/if}
-    <h2>Plain text section</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at felis ut turpis sodales consectetur. Nunc ut odio eget quam sollicitudin faucibus id eget sapien. Cras id justo venenatis, elementum ex ac, feugiat lacus. Vivamus semper dui in congue sodales. Suspendisse eu arcu eget metus volutpat tempor. Maecenas mattis augue tellus, non consequat ipsum eleifend non. Mauris ac velit nec turpis hendrerit tincidunt in eget mauris. 
-    </p>
-  </Section>
-  <Section backlink hr>
-    <h2>Section with embed</h2>
-    <p>This is a paragraph of text.</p>
-    <Figure
-      embed="<iframe></iframe>"
-      download="/"
-      background="#eaeaea"
-      height={300}>
-      Svelte code for chart/map/image goes here (remove 'background' prop for transparent background)
-    </Figure>
-    <p>This is another paragraph of text.</p>
-  </Section>
-  <Section backlink hr>
-    <h2>Section with extra wide embed</h2>
-    <p>This is a paragraph of text.</p>
-    <Figure
-      embed="<iframe></iframe>"
-      download="/"
-      background="#eaeaea"
-      height={300}
-      fullwidth={true}>
-      Svelte code for chart/map/image goes here (remove 'background' prop for transparent background)
-    </Figure>
-    <p>This is another paragraph of text.</p>
+    {/if}
   </Section>
 
   <Linkbox
@@ -568,3 +578,31 @@
       {label: 'Article two title', url: '/', type: 'Article', meta: '16 January 2022', description: 'This is a description of the article.'}
     ]}"/>
 </Article>
+
+<style>
+  	.triangle{
+  fill: transparent;
+  stroke: #206095;
+    stroke-width: 3;
+  transition: all 0.8s ease-in-out;
+  /* transform: rotate(-180deg);  */
+}
+.triangle-container {
+    float: left;
+}
+
+button {
+	color: #206095;
+    background-color: transparent;
+    outline: transparent;
+    border: none;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 18px;
+	margin-top: 60px;
+	cursor: pointer;
+}
+button:active{
+    background-color: transparent;
+}
+</style>

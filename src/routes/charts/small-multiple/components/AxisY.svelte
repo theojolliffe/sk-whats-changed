@@ -25,8 +25,6 @@
 		isBandwidth ?
 			$yScale.domain() :
 			$yScale.ticks(ticks);
-
-	console.log('topics', topics)
 </script>
 
 {#if nu == 0}
