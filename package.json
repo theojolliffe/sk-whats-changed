@@ -31,7 +31,6 @@
   },
   "type": "module",
   "dependencies": {
-    "archieml": "^0.5.0",
     "clean-css": "^4.2.3",
     "d3-delaunay": "^6.0.2",
     "d3-dsv": "latest",
@@ -43,6 +42,7 @@
     "d3-scale": "^4.0.2",
     "d3-shape": "^3.1.0",
     "fuse.js": "^6.5.3",
+    "html2canvas": "^1.4.1",
     "layercake": "^6.1.0",
     "npm-upgrade": "^3.1.0",
     "pluralize": "^8.0.0",
