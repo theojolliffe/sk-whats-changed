@@ -1,27 +1,121 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-508019a9.js",
+    "file": "start-1fdbbcb9.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_vendor-bb86f6a3.js",
-      "_singletons-a6a7384f.js",
-      "_paths-396f020f.js"
+      "_vendor-af039a36.js",
+      "_paths-396f020f.js",
+      "_singletons-d1fb5791.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
       ".svelte-kit/runtime/components/error.svelte",
       "src/routes/index.svelte",
+      "src/routes/charts/small-multiple/__layout.svelte",
+      "src/routes/charts/small-multiple/components/SmallMultipleWrapper.percent-range.svelte",
+      "src/routes/charts/small-multiple/components/HeadLabel.svelte",
+      "src/routes/charts/small-multiple/components/LabelsAge.svelte",
+      "src/routes/charts/small-multiple/components/SetCoords.svelte",
+      "src/routes/charts/small-multiple/components/Legend.svelte",
+      "src/routes/charts/small-multiple/components/AxisX.svelte",
+      "src/routes/charts/small-multiple/components/AxisY.svelte",
+      "src/routes/charts/small-multiple/components/Line.svelte",
+      "src/routes/charts/small-multiple/components/Bar.svelte",
+      "src/routes/charts/small-multiple/AgeChart.svelte",
+      "src/routes/charts/DotPlotChart.svelte",
+      "src/routes/charts/ScatterChart/ScatterChart.svelte",
+      "src/routes/charts/ScatterChart/shared/Scatter.svg.svelte",
+      "src/routes/charts/ScatterChart/shared/SetCoords.svelte",
+      "src/routes/charts/ScatterChart/shared/Voronoi.svelte",
+      "src/routes/charts/ScatterChart/shared/Footer.svelte",
+      "src/routes/charts/ScatterChart/shared/Labels.svelte",
+      "src/routes/charts/ScatterChart/shared/Legend.svelte",
+      "src/routes/charts/ScatterChart/shared/AxisX.svelte",
+      "src/routes/charts/ScatterChart/shared/AxisY.svelte",
+      "src/routes/charts/ScatterChart/shared/Title.svelte",
+      "src/routes/charts/DotLabels.svelte",
+      "src/routes/charts/HBarChart/__layout.svelte",
+      "src/routes/charts/HBarChart/components/SmallMultipleWrapper.percent-range.svelte",
+      "src/routes/charts/HBarChart/components/HeadLabel.svelte",
+      "src/routes/charts/HBarChart/components/LabelsAge.svelte",
+      "src/routes/charts/HBarChart/components/SetCoords.svelte",
+      "src/routes/charts/HBarChart/components/Legend.svelte",
+      "src/routes/charts/HBarChart/components/AxisX.svelte",
+      "src/routes/charts/HBarChart/components/AxisY.svelte",
+      "src/routes/charts/HBarChart/components/Line.svelte",
+      "src/routes/charts/HBarChart/components/Bar.svelte",
+      "src/routes/charts/HBarChart/HBarChart.svelte",
+      "src/routes/charts/BarChart.svelte",
+      "src/routes/charts/DotPlot.svelte",
+      "src/routes/charts/Legend.svelte",
+      "src/routes/charts/shared/SmallMultipleWrapper.percent-range.svelte",
+      "src/routes/charts/shared/SyncedBrushWrapper.percent-range.svelte",
+      "src/routes/charts/shared/SharedTooltip.percent-range.svelte",
+      "src/routes/charts/shared/QuadTree.percent-range.svelte",
+      "src/routes/charts/shared/SmallMultipleWrapper.svelte",
+      "src/routes/charts/shared/ForceDirectedGraph.svelte",
+      "src/routes/charts/shared/SyncedBrushWrapper.svelte",
+      "src/routes/charts/shared/CirclePack.html.svelte",
+      "src/routes/charts/shared/CirclePackForce.svelte",
+      "src/routes/charts/shared/Scatter.canvas.svelte",
+      "src/routes/charts/shared/Beeswarm.html.svelte",
+      "src/routes/charts/shared/CalendarMonth.svelte",
+      "src/routes/charts/shared/Scatter.webgl.svelte",
+      "src/routes/charts/shared/SharedTooltip.svelte",
+      "src/routes/charts/shared/ArrowheadDef.svelte",
+      "src/routes/charts/shared/ColumnLinear.svelte",
+      "src/routes/charts/shared/DotPlot.html.svelte",
+      "src/routes/charts/shared/Scatter.html.svelte",
+      "src/routes/charts/shared/Annotations.svelte",
+      "src/routes/charts/shared/Labels-html.svelte",
+      "src/routes/charts/shared/Scatter.svg.svelte",
+      "src/routes/charts/shared/AxisRadial.svelte",
+      "src/routes/charts/shared/AxisX.html.svelte",
+      "src/routes/charts/shared/AxisY.html.svelte",
+      "src/routes/charts/shared/Map.canvas.svelte",
+      "src/routes/charts/shared/MapPoints.svelte",
+      "src/routes/charts/shared/MultiLine.svelte",
+      "src/routes/charts/shared/SetCoords.svelte",
+      "src/routes/charts/shared/Beeswarm.svelte",
+      "src/routes/charts/shared/QuadTree.svelte",
+      "src/routes/charts/shared/DotPlot.svelte",
+      "src/routes/charts/shared/Map.svg.svelte",
+      "src/routes/charts/shared/Tooltip.svelte",
+      "src/routes/charts/shared/Voronoi.svelte",
+      "src/routes/charts/shared/Column.svelte",
+      "src/routes/charts/shared/Export.svelte",
+      "src/routes/charts/shared/Footer.svelte",
+      "src/routes/charts/shared/Labels.svelte",
+      "src/routes/charts/shared/Legend.svelte",
+      "src/routes/charts/shared/Sankey.svelte",
+      "src/routes/charts/shared/AxisX.svelte",
+      "src/routes/charts/shared/AxisY.svelte",
+      "src/routes/charts/shared/Brush.svelte",
+      "src/routes/charts/shared/Radar.svelte",
+      "src/routes/charts/shared/Stack.svelte",
+      "src/routes/charts/shared/Title.svelte",
+      "src/routes/charts/shared/Area.svelte",
+      "src/routes/charts/shared/Line.svelte",
+      "src/routes/charts/shared/Bar.svelte",
+      "src/routes/charts/shared/Key.svelte",
+      "src/routes/charts/shared/ss/ColumnStacked.svelte",
+      "src/routes/charts/shared/ss/AreaStacked.svelte",
+      "src/routes/charts/shared/ss/LineStacked.svelte",
+      "src/routes/charts/shared/ss/BarStacked.svelte",
+      "src/routes/charts/AxisX.svelte",
+      "src/routes/charts/AxisY.svelte",
+      "src/routes/about.svelte",
       "src/routes/[id].svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-c2269a1a.js",
+    "file": "pages/__layout.svelte-155563d1.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-bb86f6a3.js",
+      "_vendor-af039a36.js",
       "_paths-396f020f.js"
     ],
     "css": [
@@ -29,51 +123,1205 @@
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-bd0e8b75.js",
+    "file": "error.svelte-51da2437.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-bb86f6a3.js"
+      "_vendor-af039a36.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-23ce5dee.js",
+    "file": "pages/index.svelte-dbf3f963.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-bb86f6a3.js",
+      "_vendor-af039a36.js",
       "_paths-396f020f.js"
     ],
     "css": [
       "assets/pages/index.svelte-ca0e7616.css"
     ]
   },
+  "src/routes/charts/small-multiple/__layout.svelte": {
+    "file": "pages/charts/small-multiple/__layout.svelte-e4de0e02.js",
+    "src": "src/routes/charts/small-multiple/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/small-multiple/__layout.svelte-dc606be3.css"
+    ]
+  },
+  "src/routes/charts/small-multiple/components/SmallMultipleWrapper.percent-range.svelte": {
+    "file": "pages/charts/small-multiple/components/SmallMultipleWrapper.percent-range.svelte-9c0a8a74.js",
+    "src": "src/routes/charts/small-multiple/components/SmallMultipleWrapper.percent-range.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js",
+      "src/routes/charts/small-multiple/components/AxisY.svelte",
+      "src/routes/charts/small-multiple/components/AxisX.svelte",
+      "src/routes/charts/small-multiple/components/HeadLabel.svelte",
+      "src/routes/charts/small-multiple/components/LabelsAge.svelte",
+      "src/routes/charts/small-multiple/components/Bar.svelte"
+    ],
+    "css": [
+      "assets/Line.svelte_svelte_type_style_lang-8612ef0b.css"
+    ]
+  },
+  "src/routes/charts/small-multiple/components/AxisY.svelte": {
+    "file": "pages/charts/small-multiple/components/AxisY.svelte-eaadb608.js",
+    "src": "src/routes/charts/small-multiple/components/AxisY.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/small-multiple/components/AxisY.svelte-8ca36fb3.css"
+    ]
+  },
+  "src/routes/charts/small-multiple/components/AxisX.svelte": {
+    "file": "pages/charts/small-multiple/components/AxisX.svelte-a203bc03.js",
+    "src": "src/routes/charts/small-multiple/components/AxisX.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/small-multiple/components/AxisX.svelte-13a1d4ed.css"
+    ]
+  },
+  "src/routes/charts/small-multiple/components/HeadLabel.svelte": {
+    "file": "pages/charts/small-multiple/components/HeadLabel.svelte-219c0e8f.js",
+    "src": "src/routes/charts/small-multiple/components/HeadLabel.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/small-multiple/components/HeadLabel.svelte-2a0e1735.css"
+    ]
+  },
+  "src/routes/charts/small-multiple/components/LabelsAge.svelte": {
+    "file": "pages/charts/small-multiple/components/LabelsAge.svelte-88d4d044.js",
+    "src": "src/routes/charts/small-multiple/components/LabelsAge.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/small-multiple/components/LabelsAge.svelte-64d2c47a.css"
+    ]
+  },
+  "src/routes/charts/small-multiple/components/Bar.svelte": {
+    "file": "pages/charts/small-multiple/components/Bar.svelte-b38b9809.js",
+    "src": "src/routes/charts/small-multiple/components/Bar.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ]
+  },
+  "src/routes/charts/small-multiple/components/SetCoords.svelte": {
+    "file": "pages/charts/small-multiple/components/SetCoords.svelte-0df5e97c.js",
+    "src": "src/routes/charts/small-multiple/components/SetCoords.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ]
+  },
+  "src/routes/charts/small-multiple/components/Legend.svelte": {
+    "file": "pages/charts/small-multiple/components/Legend.svelte-5acff017.js",
+    "src": "src/routes/charts/small-multiple/components/Legend.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/small-multiple/components/Legend.svelte-67ee9b09.css"
+    ]
+  },
+  "src/routes/charts/small-multiple/components/Line.svelte": {
+    "file": "pages/charts/small-multiple/components/Line.svelte-64840df5.js",
+    "src": "src/routes/charts/small-multiple/components/Line.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/Line.svelte_svelte_type_style_lang-8612ef0b.css"
+    ]
+  },
+  "src/routes/charts/small-multiple/AgeChart.svelte": {
+    "file": "pages/charts/small-multiple/AgeChart.svelte-e77b5bb6.js",
+    "src": "src/routes/charts/small-multiple/AgeChart.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js",
+      "src/routes/charts/small-multiple/components/SmallMultipleWrapper.percent-range.svelte",
+      "src/routes/charts/small-multiple/components/Legend.svelte",
+      "src/routes/charts/small-multiple/components/AxisY.svelte",
+      "src/routes/charts/small-multiple/components/AxisX.svelte",
+      "src/routes/charts/small-multiple/components/HeadLabel.svelte",
+      "src/routes/charts/small-multiple/components/LabelsAge.svelte",
+      "src/routes/charts/small-multiple/components/Bar.svelte"
+    ],
+    "css": [
+      "assets/pages/charts/small-multiple/AgeChart.svelte-2cf79f66.css",
+      "assets/Line.svelte_svelte_type_style_lang-8612ef0b.css"
+    ]
+  },
+  "src/routes/charts/DotPlotChart.svelte": {
+    "file": "pages/charts/DotPlotChart.svelte-21e4477b.js",
+    "src": "src/routes/charts/DotPlotChart.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js",
+      "src/routes/charts/DotPlot.svelte",
+      "src/routes/charts/DotLabels.svelte",
+      "src/routes/charts/AxisX.svelte",
+      "src/routes/charts/AxisY.svelte",
+      "src/routes/charts/Legend.svelte"
+    ],
+    "css": [
+      "assets/pages/charts/DotPlotChart.svelte-9fb46852.css"
+    ]
+  },
+  "src/routes/charts/DotPlot.svelte": {
+    "file": "pages/charts/DotPlot.svelte-759d3802.js",
+    "src": "src/routes/charts/DotPlot.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/DotPlot.svelte-3d9eb792.css"
+    ]
+  },
+  "src/routes/charts/DotLabels.svelte": {
+    "file": "pages/charts/DotLabels.svelte-3f8a4c71.js",
+    "src": "src/routes/charts/DotLabels.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/DotLabels.svelte-a929d224.css"
+    ]
+  },
+  "src/routes/charts/AxisX.svelte": {
+    "file": "pages/charts/AxisX.svelte-bccdbeac.js",
+    "src": "src/routes/charts/AxisX.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/AxisX.svelte-29675736.css"
+    ]
+  },
+  "src/routes/charts/AxisY.svelte": {
+    "file": "pages/charts/AxisY.svelte-3cf7c0d1.js",
+    "src": "src/routes/charts/AxisY.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/AxisY.svelte-cbcf8d7e.css"
+    ]
+  },
+  "src/routes/charts/Legend.svelte": {
+    "file": "pages/charts/Legend.svelte-2b66635f.js",
+    "src": "src/routes/charts/Legend.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/small-multiple/components/Legend.svelte-67ee9b09.css"
+    ]
+  },
+  "src/routes/charts/ScatterChart/ScatterChart.svelte": {
+    "file": "pages/charts/ScatterChart/ScatterChart.svelte-30dc204d.js",
+    "src": "src/routes/charts/ScatterChart/ScatterChart.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js",
+      "src/routes/charts/ScatterChart/shared/SetCoords.svelte",
+      "src/routes/charts/ScatterChart/shared/Scatter.svg.svelte",
+      "src/routes/charts/ScatterChart/shared/Voronoi.svelte",
+      "src/routes/charts/ScatterChart/shared/AxisX.svelte",
+      "src/routes/charts/ScatterChart/shared/AxisY.svelte",
+      "src/routes/charts/ScatterChart/shared/Legend.svelte",
+      "src/routes/charts/ScatterChart/shared/Title.svelte",
+      "src/routes/charts/ScatterChart/shared/Footer.svelte",
+      "src/routes/charts/ScatterChart/shared/Labels.svelte"
+    ],
+    "css": [
+      "assets/pages/charts/ScatterChart/ScatterChart.svelte-55572bef.css"
+    ]
+  },
+  "src/routes/charts/ScatterChart/shared/SetCoords.svelte": {
+    "file": "pages/charts/ScatterChart/shared/SetCoords.svelte-a96c880c.js",
+    "src": "src/routes/charts/ScatterChart/shared/SetCoords.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ]
+  },
+  "src/routes/charts/ScatterChart/shared/Scatter.svg.svelte": {
+    "file": "pages/charts/ScatterChart/shared/Scatter.svg.svelte-5c29ac48.js",
+    "src": "src/routes/charts/ScatterChart/shared/Scatter.svg.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ]
+  },
+  "src/routes/charts/ScatterChart/shared/Voronoi.svelte": {
+    "file": "pages/charts/ScatterChart/shared/Voronoi.svelte-730200fc.js",
+    "src": "src/routes/charts/ScatterChart/shared/Voronoi.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/ScatterChart/shared/Voronoi.svelte-b568f878.css"
+    ]
+  },
+  "src/routes/charts/ScatterChart/shared/AxisX.svelte": {
+    "file": "pages/charts/ScatterChart/shared/AxisX.svelte-07a07269.js",
+    "src": "src/routes/charts/ScatterChart/shared/AxisX.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/ScatterChart/shared/AxisX.svelte-8bc03622.css"
+    ]
+  },
+  "src/routes/charts/ScatterChart/shared/AxisY.svelte": {
+    "file": "pages/charts/ScatterChart/shared/AxisY.svelte-af89a080.js",
+    "src": "src/routes/charts/ScatterChart/shared/AxisY.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/ScatterChart/shared/AxisY.svelte-285c7100.css"
+    ]
+  },
+  "src/routes/charts/ScatterChart/shared/Legend.svelte": {
+    "file": "pages/charts/ScatterChart/shared/Legend.svelte-efb2296c.js",
+    "src": "src/routes/charts/ScatterChart/shared/Legend.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/ScatterChart/shared/Legend.svelte-8233330c.css"
+    ]
+  },
+  "src/routes/charts/ScatterChart/shared/Title.svelte": {
+    "file": "pages/charts/ScatterChart/shared/Title.svelte-ed45e28e.js",
+    "src": "src/routes/charts/ScatterChart/shared/Title.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/ScatterChart/shared/Title.svelte-e035af6a.css"
+    ]
+  },
+  "src/routes/charts/ScatterChart/shared/Footer.svelte": {
+    "file": "pages/charts/ScatterChart/shared/Footer.svelte-e8c24758.js",
+    "src": "src/routes/charts/ScatterChart/shared/Footer.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/ScatterChart/shared/Footer.svelte-b1327926.css"
+    ]
+  },
+  "src/routes/charts/ScatterChart/shared/Labels.svelte": {
+    "file": "pages/charts/ScatterChart/shared/Labels.svelte-260c0c12.js",
+    "src": "src/routes/charts/ScatterChart/shared/Labels.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/ScatterChart/shared/Labels.svelte-bece2a54.css"
+    ]
+  },
+  "src/routes/charts/HBarChart/__layout.svelte": {
+    "file": "pages/charts/HBarChart/__layout.svelte-36f8bf76.js",
+    "src": "src/routes/charts/HBarChart/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/small-multiple/__layout.svelte-dc606be3.css"
+    ]
+  },
+  "src/routes/charts/HBarChart/components/SmallMultipleWrapper.percent-range.svelte": {
+    "file": "pages/charts/HBarChart/components/SmallMultipleWrapper.percent-range.svelte-5c0e95db.js",
+    "src": "src/routes/charts/HBarChart/components/SmallMultipleWrapper.percent-range.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js",
+      "src/routes/charts/HBarChart/components/AxisY.svelte",
+      "src/routes/charts/HBarChart/components/AxisX.svelte",
+      "src/routes/charts/HBarChart/components/LabelsAge.svelte",
+      "src/routes/charts/HBarChart/components/Bar.svelte"
+    ],
+    "css": [
+      "assets/pages/charts/small-multiple/components/HeadLabel.svelte-2a0e1735.css",
+      "assets/Line.svelte_svelte_type_style_lang-8612ef0b.css"
+    ]
+  },
+  "src/routes/charts/HBarChart/components/AxisY.svelte": {
+    "file": "pages/charts/HBarChart/components/AxisY.svelte-9704d2ec.js",
+    "src": "src/routes/charts/HBarChart/components/AxisY.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/small-multiple/components/AxisY.svelte-8ca36fb3.css"
+    ]
+  },
+  "src/routes/charts/HBarChart/components/AxisX.svelte": {
+    "file": "pages/charts/HBarChart/components/AxisX.svelte-73b0504e.js",
+    "src": "src/routes/charts/HBarChart/components/AxisX.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/small-multiple/components/AxisX.svelte-13a1d4ed.css"
+    ]
+  },
+  "src/routes/charts/HBarChart/components/LabelsAge.svelte": {
+    "file": "pages/charts/HBarChart/components/LabelsAge.svelte-a33e1099.js",
+    "src": "src/routes/charts/HBarChart/components/LabelsAge.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/small-multiple/components/LabelsAge.svelte-64d2c47a.css"
+    ]
+  },
+  "src/routes/charts/HBarChart/components/Bar.svelte": {
+    "file": "pages/charts/HBarChart/components/Bar.svelte-8266ec37.js",
+    "src": "src/routes/charts/HBarChart/components/Bar.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ]
+  },
+  "src/routes/charts/HBarChart/components/HeadLabel.svelte": {
+    "file": "pages/charts/HBarChart/components/HeadLabel.svelte-19942636.js",
+    "src": "src/routes/charts/HBarChart/components/HeadLabel.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/small-multiple/components/HeadLabel.svelte-2a0e1735.css"
+    ]
+  },
+  "src/routes/charts/HBarChart/components/SetCoords.svelte": {
+    "file": "pages/charts/HBarChart/components/SetCoords.svelte-9c5da316.js",
+    "src": "src/routes/charts/HBarChart/components/SetCoords.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ]
+  },
+  "src/routes/charts/HBarChart/components/Legend.svelte": {
+    "file": "pages/charts/HBarChart/components/Legend.svelte-907d90f5.js",
+    "src": "src/routes/charts/HBarChart/components/Legend.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/small-multiple/components/Legend.svelte-67ee9b09.css"
+    ]
+  },
+  "src/routes/charts/HBarChart/components/Line.svelte": {
+    "file": "pages/charts/HBarChart/components/Line.svelte-92648e86.js",
+    "src": "src/routes/charts/HBarChart/components/Line.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/Line.svelte_svelte_type_style_lang-8612ef0b.css"
+    ]
+  },
+  "src/routes/charts/HBarChart/HBarChart.svelte": {
+    "file": "pages/charts/HBarChart/HBarChart.svelte-10b5f89f.js",
+    "src": "src/routes/charts/HBarChart/HBarChart.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js",
+      "src/routes/charts/HBarChart/components/SmallMultipleWrapper.percent-range.svelte",
+      "src/routes/charts/HBarChart/components/Legend.svelte",
+      "src/routes/charts/HBarChart/components/AxisY.svelte",
+      "src/routes/charts/HBarChart/components/AxisX.svelte",
+      "src/routes/charts/HBarChart/components/LabelsAge.svelte",
+      "src/routes/charts/HBarChart/components/Bar.svelte"
+    ],
+    "css": [
+      "assets/pages/charts/HBarChart/HBarChart.svelte-0a9ecd6b.css",
+      "assets/pages/charts/small-multiple/components/HeadLabel.svelte-2a0e1735.css",
+      "assets/Line.svelte_svelte_type_style_lang-8612ef0b.css"
+    ]
+  },
+  "src/routes/charts/BarChart.svelte": {
+    "file": "pages/charts/BarChart.svelte-db54fea4.js",
+    "src": "src/routes/charts/BarChart.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js",
+      "src/routes/charts/shared/SetCoords.svelte",
+      "src/routes/charts/shared/Bar.svelte",
+      "src/routes/charts/shared/AxisX.svelte",
+      "src/routes/charts/shared/AxisY.svelte",
+      "src/routes/charts/shared/Legend.svelte",
+      "src/routes/charts/shared/Title.svelte",
+      "src/routes/charts/shared/Footer.svelte",
+      "src/routes/charts/shared/Export.svelte",
+      "_utils-a07f0494.js"
+    ],
+    "css": [
+      "assets/pages/charts/ScatterChart/ScatterChart.svelte-55572bef.css"
+    ]
+  },
+  "src/routes/charts/shared/SetCoords.svelte": {
+    "file": "pages/charts/shared/SetCoords.svelte-0163dd8b.js",
+    "src": "src/routes/charts/shared/SetCoords.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ]
+  },
+  "src/routes/charts/shared/Bar.svelte": {
+    "file": "pages/charts/shared/Bar.svelte-baef116d.js",
+    "src": "src/routes/charts/shared/Bar.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ]
+  },
+  "src/routes/charts/shared/AxisX.svelte": {
+    "file": "pages/charts/shared/AxisX.svelte-ed22c519.js",
+    "src": "src/routes/charts/shared/AxisX.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/ScatterChart/shared/AxisX.svelte-8bc03622.css"
+    ]
+  },
+  "src/routes/charts/shared/AxisY.svelte": {
+    "file": "pages/charts/shared/AxisY.svelte-c5683434.js",
+    "src": "src/routes/charts/shared/AxisY.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/ScatterChart/shared/AxisY.svelte-285c7100.css"
+    ]
+  },
+  "src/routes/charts/shared/Legend.svelte": {
+    "file": "pages/charts/shared/Legend.svelte-0fd97ecd.js",
+    "src": "src/routes/charts/shared/Legend.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/ScatterChart/shared/Legend.svelte-8233330c.css"
+    ]
+  },
+  "src/routes/charts/shared/Title.svelte": {
+    "file": "pages/charts/shared/Title.svelte-290427c7.js",
+    "src": "src/routes/charts/shared/Title.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/ScatterChart/shared/Title.svelte-e035af6a.css"
+    ]
+  },
+  "src/routes/charts/shared/Footer.svelte": {
+    "file": "pages/charts/shared/Footer.svelte-edcca7c8.js",
+    "src": "src/routes/charts/shared/Footer.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/ScatterChart/shared/Footer.svelte-b1327926.css"
+    ]
+  },
+  "src/routes/charts/shared/Export.svelte": {
+    "file": "pages/charts/shared/Export.svelte-199ed742.js",
+    "src": "src/routes/charts/shared/Export.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js",
+      "_utils-a07f0494.js"
+    ],
+    "css": [
+      "assets/pages/charts/shared/Export.svelte-d0a00f21.css"
+    ]
+  },
+  "src/routes/charts/shared/SmallMultipleWrapper.percent-range.svelte": {
+    "file": "pages/charts/shared/SmallMultipleWrapper.percent-range.svelte-010ead14.js",
+    "src": "src/routes/charts/shared/SmallMultipleWrapper.percent-range.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js",
+      "src/routes/charts/shared/Line.svelte"
+    ]
+  },
+  "src/routes/charts/shared/Line.svelte": {
+    "file": "pages/charts/shared/Line.svelte-ac58b131.js",
+    "src": "src/routes/charts/shared/Line.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/shared/Line.svelte-9ba52616.css"
+    ]
+  },
+  "src/routes/charts/shared/SyncedBrushWrapper.percent-range.svelte": {
+    "file": "pages/charts/shared/SyncedBrushWrapper.percent-range.svelte-82ed37dd.js",
+    "src": "src/routes/charts/shared/SyncedBrushWrapper.percent-range.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js",
+      "src/routes/charts/shared/Line.svelte",
+      "src/routes/charts/shared/Area.svelte",
+      "src/routes/charts/shared/AxisX.html.svelte",
+      "src/routes/charts/shared/AxisY.html.svelte",
+      "src/routes/charts/shared/Brush.svelte"
+    ],
+    "css": [
+      "assets/pages/charts/shared/SyncedBrushWrapper.percent-range.svelte-efc45eef.css"
+    ]
+  },
+  "src/routes/charts/shared/Area.svelte": {
+    "file": "pages/charts/shared/Area.svelte-febd3ec0.js",
+    "src": "src/routes/charts/shared/Area.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ]
+  },
+  "src/routes/charts/shared/AxisX.html.svelte": {
+    "file": "pages/charts/shared/AxisX.html.svelte-d62384ac.js",
+    "src": "src/routes/charts/shared/AxisX.html.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/shared/AxisX.html.svelte-bb9ffd04.css"
+    ]
+  },
+  "src/routes/charts/shared/AxisY.html.svelte": {
+    "file": "pages/charts/shared/AxisY.html.svelte-eeab847c.js",
+    "src": "src/routes/charts/shared/AxisY.html.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/shared/AxisY.html.svelte-eae3d1b7.css"
+    ]
+  },
+  "src/routes/charts/shared/Brush.svelte": {
+    "file": "pages/charts/shared/Brush.svelte-bcb6fd9a.js",
+    "src": "src/routes/charts/shared/Brush.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/shared/Brush.svelte-9246afe3.css"
+    ]
+  },
+  "src/routes/charts/shared/SharedTooltip.percent-range.svelte": {
+    "file": "pages/charts/shared/SharedTooltip.percent-range.svelte-00d666eb.js",
+    "src": "src/routes/charts/shared/SharedTooltip.percent-range.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js",
+      "src/routes/charts/shared/QuadTree.percent-range.svelte"
+    ],
+    "css": [
+      "assets/pages/charts/shared/SharedTooltip.percent-range.svelte-86cdc7cb.css"
+    ]
+  },
+  "src/routes/charts/shared/QuadTree.percent-range.svelte": {
+    "file": "pages/charts/shared/QuadTree.percent-range.svelte-a624c785.js",
+    "src": "src/routes/charts/shared/QuadTree.percent-range.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/shared/QuadTree.svelte-dba5cb69.css"
+    ]
+  },
+  "src/routes/charts/shared/SmallMultipleWrapper.svelte": {
+    "file": "pages/charts/shared/SmallMultipleWrapper.svelte-323d54a6.js",
+    "src": "src/routes/charts/shared/SmallMultipleWrapper.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js",
+      "src/routes/charts/shared/Line.svelte"
+    ]
+  },
+  "src/routes/charts/shared/ForceDirectedGraph.svelte": {
+    "file": "pages/charts/shared/ForceDirectedGraph.svelte-be2cbdac.js",
+    "src": "src/routes/charts/shared/ForceDirectedGraph.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ]
+  },
+  "src/routes/charts/shared/SyncedBrushWrapper.svelte": {
+    "file": "pages/charts/shared/SyncedBrushWrapper.svelte-7e4c9f09.js",
+    "src": "src/routes/charts/shared/SyncedBrushWrapper.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js",
+      "src/routes/charts/shared/Line.svelte",
+      "src/routes/charts/shared/Area.svelte",
+      "src/routes/charts/shared/AxisX.svelte",
+      "src/routes/charts/shared/AxisY.svelte",
+      "src/routes/charts/shared/Brush.svelte"
+    ],
+    "css": [
+      "assets/pages/charts/shared/SyncedBrushWrapper.percent-range.svelte-efc45eef.css"
+    ]
+  },
+  "src/routes/charts/shared/CirclePack.html.svelte": {
+    "file": "pages/charts/shared/CirclePack.html.svelte-b810d852.js",
+    "src": "src/routes/charts/shared/CirclePack.html.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/shared/CirclePack.html.svelte-b6a645aa.css"
+    ]
+  },
+  "src/routes/charts/shared/CirclePackForce.svelte": {
+    "file": "pages/charts/shared/CirclePackForce.svelte-e56daae6.js",
+    "src": "src/routes/charts/shared/CirclePackForce.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ]
+  },
+  "src/routes/charts/shared/Scatter.canvas.svelte": {
+    "file": "pages/charts/shared/Scatter.canvas.svelte-89106d1d.js",
+    "src": "src/routes/charts/shared/Scatter.canvas.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ]
+  },
+  "src/routes/charts/shared/Beeswarm.html.svelte": {
+    "file": "pages/charts/shared/Beeswarm.html.svelte-41c18a17.js",
+    "src": "src/routes/charts/shared/Beeswarm.html.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/shared/Beeswarm.html.svelte-1c3ff3c3.css"
+    ]
+  },
+  "src/routes/charts/shared/CalendarMonth.svelte": {
+    "file": "pages/charts/shared/CalendarMonth.svelte-c35ea102.js",
+    "src": "src/routes/charts/shared/CalendarMonth.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/shared/CalendarMonth.svelte-1aaf9084.css"
+    ]
+  },
+  "src/routes/charts/shared/Scatter.webgl.svelte": {
+    "file": "pages/charts/shared/Scatter.webgl.svelte-acbb4bb0.js",
+    "src": "src/routes/charts/shared/Scatter.webgl.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ]
+  },
+  "src/routes/charts/shared/SharedTooltip.svelte": {
+    "file": "pages/charts/shared/SharedTooltip.svelte-62ffa26c.js",
+    "src": "src/routes/charts/shared/SharedTooltip.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js",
+      "src/routes/charts/shared/QuadTree.svelte"
+    ],
+    "css": [
+      "assets/pages/charts/shared/SharedTooltip.svelte-e1f7694b.css"
+    ]
+  },
+  "src/routes/charts/shared/QuadTree.svelte": {
+    "file": "pages/charts/shared/QuadTree.svelte-b6533712.js",
+    "src": "src/routes/charts/shared/QuadTree.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/shared/QuadTree.svelte-dba5cb69.css"
+    ]
+  },
+  "src/routes/charts/shared/ArrowheadDef.svelte": {
+    "file": "pages/charts/shared/ArrowheadDef.svelte-33f7d03e.js",
+    "src": "src/routes/charts/shared/ArrowheadDef.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ]
+  },
+  "src/routes/charts/shared/ColumnLinear.svelte": {
+    "file": "pages/charts/shared/ColumnLinear.svelte-3cb159d6.js",
+    "src": "src/routes/charts/shared/ColumnLinear.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ]
+  },
+  "src/routes/charts/shared/DotPlot.html.svelte": {
+    "file": "pages/charts/shared/DotPlot.html.svelte-07c64d83.js",
+    "src": "src/routes/charts/shared/DotPlot.html.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/shared/DotPlot.html.svelte-039ebb7a.css"
+    ]
+  },
+  "src/routes/charts/shared/Scatter.html.svelte": {
+    "file": "pages/charts/shared/Scatter.html.svelte-9c7f4e00.js",
+    "src": "src/routes/charts/shared/Scatter.html.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/shared/Scatter.html.svelte-175cefe0.css"
+    ]
+  },
+  "src/routes/charts/shared/Annotations.svelte": {
+    "file": "pages/charts/shared/Annotations.svelte-f65de029.js",
+    "src": "src/routes/charts/shared/Annotations.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/shared/Annotations.svelte-c152198a.css"
+    ]
+  },
+  "src/routes/charts/shared/Labels-html.svelte": {
+    "file": "pages/charts/shared/Labels-html.svelte-9e75093c.js",
+    "src": "src/routes/charts/shared/Labels-html.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/shared/Labels-html.svelte-6a8dc7f2.css"
+    ]
+  },
+  "src/routes/charts/shared/Scatter.svg.svelte": {
+    "file": "pages/charts/shared/Scatter.svg.svelte-cd490ca1.js",
+    "src": "src/routes/charts/shared/Scatter.svg.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ]
+  },
+  "src/routes/charts/shared/AxisRadial.svelte": {
+    "file": "pages/charts/shared/AxisRadial.svelte-ce51967b.js",
+    "src": "src/routes/charts/shared/AxisRadial.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ]
+  },
+  "src/routes/charts/shared/Map.canvas.svelte": {
+    "file": "pages/charts/shared/Map.canvas.svelte-1d69aa51.js",
+    "src": "src/routes/charts/shared/Map.canvas.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ]
+  },
+  "src/routes/charts/shared/MapPoints.svelte": {
+    "file": "pages/charts/shared/MapPoints.svelte-bf527dd1.js",
+    "src": "src/routes/charts/shared/MapPoints.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/shared/MapPoints.svelte-380d97cd.css"
+    ]
+  },
+  "src/routes/charts/shared/MultiLine.svelte": {
+    "file": "pages/charts/shared/MultiLine.svelte-473191e7.js",
+    "src": "src/routes/charts/shared/MultiLine.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/shared/MultiLine.svelte-0aa79469.css"
+    ]
+  },
+  "src/routes/charts/shared/Beeswarm.svelte": {
+    "file": "pages/charts/shared/Beeswarm.svelte-d24c31e4.js",
+    "src": "src/routes/charts/shared/Beeswarm.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ]
+  },
+  "src/routes/charts/shared/DotPlot.svelte": {
+    "file": "pages/charts/shared/DotPlot.svelte-011d9d27.js",
+    "src": "src/routes/charts/shared/DotPlot.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ]
+  },
+  "src/routes/charts/shared/Map.svg.svelte": {
+    "file": "pages/charts/shared/Map.svg.svelte-a3f243ca.js",
+    "src": "src/routes/charts/shared/Map.svg.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/shared/Map.svg.svelte-b7ff9202.css"
+    ]
+  },
+  "src/routes/charts/shared/Tooltip.svelte": {
+    "file": "pages/charts/shared/Tooltip.svelte-4d0734a9.js",
+    "src": "src/routes/charts/shared/Tooltip.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/shared/Tooltip.svelte-7712bac2.css"
+    ]
+  },
+  "src/routes/charts/shared/Voronoi.svelte": {
+    "file": "pages/charts/shared/Voronoi.svelte-f3e482db.js",
+    "src": "src/routes/charts/shared/Voronoi.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/ScatterChart/shared/Voronoi.svelte-b568f878.css"
+    ]
+  },
+  "src/routes/charts/shared/Column.svelte": {
+    "file": "pages/charts/shared/Column.svelte-e26b1c30.js",
+    "src": "src/routes/charts/shared/Column.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ]
+  },
+  "src/routes/charts/shared/Labels.svelte": {
+    "file": "pages/charts/shared/Labels.svelte-be7aa69e.js",
+    "src": "src/routes/charts/shared/Labels.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/shared/Labels.svelte-cc9bef85.css"
+    ]
+  },
+  "src/routes/charts/shared/Sankey.svelte": {
+    "file": "pages/charts/shared/Sankey.svelte-ded2382a.js",
+    "src": "src/routes/charts/shared/Sankey.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/shared/Sankey.svelte-b8b03a49.css"
+    ]
+  },
+  "src/routes/charts/shared/Radar.svelte": {
+    "file": "pages/charts/shared/Radar.svelte-0f591a07.js",
+    "src": "src/routes/charts/shared/Radar.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/shared/Radar.svelte-a8cca4d7.css"
+    ]
+  },
+  "src/routes/charts/shared/Stack.svelte": {
+    "file": "pages/charts/shared/Stack.svelte-aefca9f9.js",
+    "src": "src/routes/charts/shared/Stack.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ]
+  },
+  "src/routes/charts/shared/Key.svelte": {
+    "file": "pages/charts/shared/Key.svelte-9f741ca9.js",
+    "src": "src/routes/charts/shared/Key.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/charts/shared/Key.svelte-10ecf653.css"
+    ]
+  },
+  "src/routes/charts/shared/ss/ColumnStacked.svelte": {
+    "file": "pages/charts/shared/ss/ColumnStacked.svelte-bb13ce4a.js",
+    "src": "src/routes/charts/shared/ss/ColumnStacked.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js",
+      "_utils-a07f0494.js"
+    ]
+  },
+  "src/routes/charts/shared/ss/AreaStacked.svelte": {
+    "file": "pages/charts/shared/ss/AreaStacked.svelte-db2c8c23.js",
+    "src": "src/routes/charts/shared/ss/AreaStacked.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js",
+      "_utils-a07f0494.js"
+    ]
+  },
+  "src/routes/charts/shared/ss/LineStacked.svelte": {
+    "file": "pages/charts/shared/ss/LineStacked.svelte-36de5709.js",
+    "src": "src/routes/charts/shared/ss/LineStacked.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js",
+      "_utils-a07f0494.js"
+    ],
+    "css": [
+      "assets/pages/charts/shared/ss/LineStacked.svelte-f9135d1f.css"
+    ]
+  },
+  "src/routes/charts/shared/ss/BarStacked.svelte": {
+    "file": "pages/charts/shared/ss/BarStacked.svelte-3799aa59.js",
+    "src": "src/routes/charts/shared/ss/BarStacked.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js",
+      "_utils-a07f0494.js"
+    ]
+  },
+  "src/routes/about.svelte": {
+    "file": "pages/about.svelte-0e921973.js",
+    "src": "src/routes/about.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-af039a36.js"
+    ],
+    "css": [
+      "assets/pages/about.svelte-bf4528fa.css"
+    ]
+  },
   "src/routes/[id].svelte": {
-    "file": "pages/_id_.svelte-eadb6886.js",
+    "file": "pages/_id_.svelte-ac42407c.js",
     "src": "src/routes/[id].svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-bb86f6a3.js",
+      "_vendor-af039a36.js",
       "_paths-396f020f.js",
-      "_singletons-a6a7384f.js"
+      "_singletons-d1fb5791.js",
+      "src/routes/charts/ScatterChart/ScatterChart.svelte",
+      "src/routes/charts/small-multiple/AgeChart.svelte",
+      "src/routes/charts/HBarChart/HBarChart.svelte",
+      "src/routes/charts/DotPlotChart.svelte",
+      "src/routes/charts/ScatterChart/shared/SetCoords.svelte",
+      "src/routes/charts/ScatterChart/shared/Scatter.svg.svelte",
+      "src/routes/charts/ScatterChart/shared/Voronoi.svelte",
+      "src/routes/charts/ScatterChart/shared/AxisX.svelte",
+      "src/routes/charts/ScatterChart/shared/AxisY.svelte",
+      "src/routes/charts/ScatterChart/shared/Legend.svelte",
+      "src/routes/charts/ScatterChart/shared/Title.svelte",
+      "src/routes/charts/ScatterChart/shared/Footer.svelte",
+      "src/routes/charts/ScatterChart/shared/Labels.svelte",
+      "src/routes/charts/small-multiple/components/SmallMultipleWrapper.percent-range.svelte",
+      "src/routes/charts/small-multiple/components/AxisY.svelte",
+      "src/routes/charts/small-multiple/components/AxisX.svelte",
+      "src/routes/charts/small-multiple/components/HeadLabel.svelte",
+      "src/routes/charts/small-multiple/components/LabelsAge.svelte",
+      "src/routes/charts/small-multiple/components/Bar.svelte",
+      "src/routes/charts/small-multiple/components/Legend.svelte",
+      "src/routes/charts/HBarChart/components/SmallMultipleWrapper.percent-range.svelte",
+      "src/routes/charts/HBarChart/components/AxisY.svelte",
+      "src/routes/charts/HBarChart/components/AxisX.svelte",
+      "src/routes/charts/HBarChart/components/LabelsAge.svelte",
+      "src/routes/charts/HBarChart/components/Bar.svelte",
+      "src/routes/charts/HBarChart/components/Legend.svelte",
+      "src/routes/charts/DotPlot.svelte",
+      "src/routes/charts/DotLabels.svelte",
+      "src/routes/charts/AxisX.svelte",
+      "src/routes/charts/AxisY.svelte",
+      "src/routes/charts/Legend.svelte"
     ],
     "css": [
-      "assets/pages/_id_.svelte-024d1136.css"
+      "assets/pages/_id_.svelte-024d1136.css",
+      "assets/Line.svelte_svelte_type_style_lang-8612ef0b.css",
+      "assets/pages/charts/small-multiple/components/HeadLabel.svelte-2a0e1735.css"
     ]
   },
-  "_vendor-bb86f6a3.js": {
-    "file": "chunks/vendor-bb86f6a3.js",
+  "_vendor-af039a36.js": {
+    "file": "chunks/vendor-af039a36.js",
     "css": [
-      "assets/vendor-4ff902fe.css"
+      "assets/vendor-6c3334af.css"
     ]
-  },
-  "_singletons-a6a7384f.js": {
-    "file": "chunks/singletons-a6a7384f.js"
   },
   "_paths-396f020f.js": {
     "file": "chunks/paths-396f020f.js"
+  },
+  "_singletons-d1fb5791.js": {
+    "file": "chunks/singletons-d1fb5791.js"
+  },
+  "_utils-a07f0494.js": {
+    "file": "chunks/utils-a07f0494.js",
+    "imports": [
+      "_vendor-af039a36.js"
+    ]
   }
 }

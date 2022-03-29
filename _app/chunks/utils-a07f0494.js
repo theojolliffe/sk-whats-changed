@@ -1,0 +1,3 @@
+import{af as h}from"./vendor-af039a36.js";function p(e,a,t,o){let c=[],r=JSON.parse(JSON.stringify(e.filter(n=>n[o]==a[0])));return r.forEach(n=>n[t]=0),a.forEach(n=>{let s=JSON.parse(JSON.stringify(e.filter(f=>f[o]==n)));s.forEach((f,i)=>{f[t]+=r[i][t],r[i][t]=f[t]}),c.push(s)}),c}function g(e,a=[],t){let o="",c=[];a.forEach(n=>{n&&!c.includes(n)&&c.push(n)}),o+=c.join(",")+`
+`,e.forEach(n=>{o+=c.map(s=>n[s]).join(",")+`
+`});let r="data:text/csv;charset=utf-8,"+encodeURI(o);l(r,t+".csv")}function E(e,a){h(e).then(t=>{let o=t.toDataURL();l(o,a+".png")})}function l(e,a){var t=document.createElement("a");t.href=e,t.download=a,t.click()}export{E as a,g,p as s};
