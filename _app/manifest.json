@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-33a77389.js",
+    "file": "start-2db40708.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -182,7 +182,7 @@
       "_vendor-af039a36.js"
     ],
     "css": [
-      "assets/pages/charts/HBarChart/components/AxisY.svelte-59113fb6.css"
+      "assets/pages/charts/small-multiple/components/AxisY.svelte-8ca36fb3.css"
     ]
   },
   "src/routes/charts/small-multiple/components/AxisX.svelte": {
@@ -194,7 +194,7 @@
       "_vendor-af039a36.js"
     ],
     "css": [
-      "assets/pages/charts/small-multiple/components/AxisX.svelte-13a1d4ed.css"
+      "assets/pages/charts/HBarChart/components/AxisX.svelte-4ecf195d.css"
     ]
   },
   "src/routes/charts/small-multiple/components/HeadLabel.svelte": {
@@ -378,7 +378,7 @@
       "src/routes/charts/ScatterChart/shared/Labels.svelte"
     ],
     "css": [
-      "assets/pages/charts/ScatterChart/ScatterChart.svelte-55572bef.css"
+      "assets/pages/charts/BarChart.svelte-6b7f8cc3.css"
     ]
   },
   "src/routes/charts/ScatterChart/shared/SetCoords.svelte": {
@@ -420,7 +420,7 @@
       "_vendor-af039a36.js"
     ],
     "css": [
-      "assets/pages/charts/shared/AxisX.svelte-73298911.css"
+      "assets/pages/charts/ScatterChart/shared/AxisX.svelte-8bc03622.css"
     ]
   },
   "src/routes/charts/ScatterChart/shared/AxisY.svelte": {
@@ -432,7 +432,7 @@
       "_vendor-af039a36.js"
     ],
     "css": [
-      "assets/pages/charts/shared/AxisY.svelte-b037e53a.css"
+      "assets/pages/charts/ScatterChart/shared/AxisY.svelte-285c7100.css"
     ]
   },
   "src/routes/charts/ScatterChart/shared/Legend.svelte": {
@@ -444,7 +444,7 @@
       "_vendor-af039a36.js"
     ],
     "css": [
-      "assets/pages/charts/shared/Legend.svelte-dd164d4f.css"
+      "assets/pages/charts/ScatterChart/shared/Legend.svelte-8233330c.css"
     ]
   },
   "src/routes/charts/ScatterChart/shared/Title.svelte": {
@@ -456,7 +456,7 @@
       "_vendor-af039a36.js"
     ],
     "css": [
-      "assets/pages/charts/ScatterChart/shared/Title.svelte-e035af6a.css"
+      "assets/pages/charts/shared/Title.svelte-0003035d.css"
     ]
   },
   "src/routes/charts/ScatterChart/shared/Footer.svelte": {
@@ -521,7 +521,7 @@
       "_vendor-af039a36.js"
     ],
     "css": [
-      "assets/pages/charts/HBarChart/components/AxisY.svelte-59113fb6.css"
+      "assets/pages/charts/small-multiple/components/AxisY.svelte-8ca36fb3.css"
     ]
   },
   "src/routes/charts/HBarChart/components/AxisX.svelte": {
@@ -533,7 +533,7 @@
       "_vendor-af039a36.js"
     ],
     "css": [
-      "assets/pages/charts/small-multiple/components/AxisX.svelte-13a1d4ed.css"
+      "assets/pages/charts/HBarChart/components/AxisX.svelte-4ecf195d.css"
     ]
   },
   "src/routes/charts/HBarChart/components/LabelsAge.svelte": {
@@ -640,7 +640,7 @@
       "_utils-a07f0494.js"
     ],
     "css": [
-      "assets/pages/charts/ScatterChart/ScatterChart.svelte-55572bef.css"
+      "assets/pages/charts/BarChart.svelte-6b7f8cc3.css"
     ]
   },
   "src/routes/charts/shared/SetCoords.svelte": {
@@ -670,7 +670,7 @@
       "_vendor-af039a36.js"
     ],
     "css": [
-      "assets/pages/charts/shared/AxisX.svelte-73298911.css"
+      "assets/pages/charts/ScatterChart/shared/AxisX.svelte-8bc03622.css"
     ]
   },
   "src/routes/charts/shared/AxisY.svelte": {
@@ -682,7 +682,7 @@
       "_vendor-af039a36.js"
     ],
     "css": [
-      "assets/pages/charts/shared/AxisY.svelte-b037e53a.css"
+      "assets/pages/charts/ScatterChart/shared/AxisY.svelte-285c7100.css"
     ]
   },
   "src/routes/charts/shared/Legend.svelte": {
@@ -694,7 +694,7 @@
       "_vendor-af039a36.js"
     ],
     "css": [
-      "assets/pages/charts/shared/Legend.svelte-dd164d4f.css"
+      "assets/pages/charts/ScatterChart/shared/Legend.svelte-8233330c.css"
     ]
   },
   "src/routes/charts/shared/Title.svelte": {
@@ -706,7 +706,7 @@
       "_vendor-af039a36.js"
     ],
     "css": [
-      "assets/pages/charts/ScatterChart/shared/Title.svelte-e035af6a.css"
+      "assets/pages/charts/shared/Title.svelte-0003035d.css"
     ]
   },
   "src/routes/charts/shared/Footer.svelte": {
