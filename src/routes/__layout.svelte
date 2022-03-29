@@ -7,7 +7,7 @@
 	import Warning from "$lib/ui/Warning.svelte";
 	import ONSHeader from "$lib/layout/ONSHeader.svelte";
 	import ONSFooter from "$lib/layout/ONSFooter.svelte";
-
+	
   let path = $page.url.pathname;
   let lang = $page.url.hostname.split(".")[0] == "cy" ? "cy" : "en";
   let baseurl = lang == "cy" ? "//cy.ons.gov.uk" : "//www.ons.gov.uk";

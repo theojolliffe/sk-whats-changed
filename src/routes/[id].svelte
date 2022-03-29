@@ -52,13 +52,13 @@
 	import Linkbox from "$lib/layout/Linkbox.svelte";
   import Select from "$lib/ui/Select.svelte";
 
-	// import { ScatterChart } from './@onsvisual/svelte-charts';
+	// // import { ScatterChart } from './@onsvisual/svelte-charts';
 	// import ScatterChart from './charts/ScatterChart/ScatterChart.svelte';
 	// import AgeChart from './charts/small-multiple/AgeChart.svelte';
 	// import HBarChart from './charts/HBarChart/HBarChart.svelte';
 	// import DotPlotChart from './charts/DotPlotChart.svelte';
 
-	// import { load as loadarch } from "archieml";
+  // import { load as loadarch } from "archieml";
   import robojournalist from 'robojournalist';
   import pluralize from 'pluralize';
 	import Fuse from 'fuse.js';
@@ -538,7 +538,10 @@
       {@html res}
       <div style="width: 100%">
         {#if false && i < place.stories.length}
-          <svelte:component this="{chartType(i)}" {...makeProps(i)}/>
+          {#if makeProps(i)}
+          {console.log('makeProps(i)', makeProps(i))}
+            <svelte:component this="{chartType(i)}" {...makeProps(i)}/>
+          {/if}
         {/if}
       </div>
     {/each}

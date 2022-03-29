@@ -12,14 +12,12 @@ const config = {
 			assets: 'build'
 		}),
 		prerender: {
-			enabled: production,
-			default: production
+			enabled: production
 		},
 		paths: {
 			assets: production ? 'http://theojolliffe.github.io/sk-whats-changed' : '',
 			base: production ? '/sk-whats-changed' : ''
-		},
-		appDir: 'internal'
+		}
 	}
 };
 
